@@ -1,7 +1,7 @@
-// EJERCICIO 1
+// EJERCICIO 3
 import Beers from './component/beers/Beers'
 import './App.css'
-
+import Conteo from './component/conteo/Conteo'
 const beers = [
   {
       id: 1,
@@ -77,10 +77,9 @@ function App() {
       <div>
         <h1>CERVEZAS:</h1>
         <div class='cards'>
-        {
-          beersAvailable
-        }
+          {beersAvailable}
         </div>
+        <Conteo beers={beers}/>
       </div>
     </>
   )
