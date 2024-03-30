@@ -75,16 +75,12 @@ function App() {
   return (
     <>
       <div>
-        <p>Hola</p>
-  
-        {
-          beers.map((beer)=> (<Beers key={beer.id} beerName = {beer.beerName} beerStyle ={beer.beerStyle} price = {beer.price} available= {beer.available}/>))
-        }
-        <p>---------------------------------</p>
-        <p>Beers Filtrada</p>
+        <h1>CERVEZAS:</h1>
+        <div class='cards'>
         {
           beersAvailable
         }
+        </div>
       </div>
     </>
   )
