@@ -1,4 +1,4 @@
-// EJERCICIO 1
+// EJERCICIO 2
 import Beers from './component/beers/Beers'
 import './App.css'
 
