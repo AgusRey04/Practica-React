@@ -1,7 +1,8 @@
-// EJERCICIO 3
+// EJERCICIO 4
 import Beers from './component/beers/Beers'
 import './App.css'
 import Conteo from './component/conteo/Conteo'
+import BeerStyle from './component/beersStyle/BeerStyle';
 const beers = [
   {
       id: 1,
@@ -70,8 +71,8 @@ const beers = [
 
 const beersAvailable = beers.filter((beer) => beer.available === true).map((beer)=>(<Beers key={beer.id} beerName = {beer.beerName} beerStyle ={beer.beerStyle} price = {beer.price} available= {beer.available}/>));
 
+const beersStylen = beers.map((beer) => <BeerStyle key={beer.id} beerStyle ={beer.beerStyle}/>);
 function App() {
-
   return (
     <>
       <div>
@@ -80,6 +81,10 @@ function App() {
           {beersAvailable}
         </div>
         <Conteo beers={beers}/>
+        <h4>BeerStyle</h4>
+        <div class='cards'>
+          {beersStylen}
+        </div>
       </div>
     </>
   )
