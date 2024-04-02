@@ -70,19 +70,20 @@ const beers = [
 ];
 
 const beersAvailable = beers.filter((beer) => beer.available === true).map((beer)=>(<Beers key={beer.id} beerName = {beer.beerName} beerStyle ={beer.beerStyle} price = {beer.price} available= {beer.available}/>));
-
 const beersStylen = beers.map((beer) => <BeerStyle key={beer.id} beerStyle ={beer.beerStyle}/>);
+
+
 function App() {
   return (
     <>
       <div>
         <h1>CERVEZAS:</h1>
-        <div class='cards'>
+        <div className='cards'>
           {beersAvailable}
         </div>
         <Conteo beers={beers}/>
         <h4>BeerStyle</h4>
-        <div class='cards'>
+        <div className='cards'>
           {beersStylen}
         </div>
       </div>
