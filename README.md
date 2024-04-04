@@ -6,4 +6,4 @@ Ejercicios de la practica 1:
 
 
 Teoria:
--[Teoria-Ejercicio-1](https://github.com/AgusRey04/Practica-React/tree/Teoria-1)
+  - [Teoria-Ejercicio-1](https://github.com/AgusRey04/Practica-React/tree/Teoria-1)
